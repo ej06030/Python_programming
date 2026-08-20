@@ -14,8 +14,8 @@ print(a, type(a), sep = ", ")
 b = float(input())
 
 # 정수 2개 입력
-100
-200
+#100
+#200
 a = int(input())
 b = int(input())
 print(a, b)
