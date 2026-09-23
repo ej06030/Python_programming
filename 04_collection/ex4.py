@@ -119,7 +119,8 @@ print(f"{days[hours.index(max(hours))]}")                                       
 
 # 4️⃣ 가장 높은 점수와 가장 낮은 점수 출력하기
 scores = (90, 85, 78, 92, 88, 76)
-
+result = sorted(result)
+print(f"max 점수: {result[-1]}점, min 점수: {result[0]}점")
 
 print(max(scores), min(scores))                                                    # ✅ max 점수: 92점, min 점수: 76점
 
@@ -131,9 +132,17 @@ stocks = (
     ("체리", 5000, 2),
 )
 
+total = sum(price * num for name, price, num in stocks)
+print(f"총액: {total:,}원")
+
 # 품목, 가격, 수량 튜플 만들기
 
-                                                    # ✅ ('사과', '바나나', '체리')
+stocks = (
+    ("사과", "바나나", "체리"),
+    (1000, 2000, 5000),
+    (5, 3, 2),
+)
+                                                  # ✅ ('사과', '바나나', '체리')
                                                     # ✅ (1000, 2000, 5000)
                                                     # ✅ (5, 3, 2)
 
